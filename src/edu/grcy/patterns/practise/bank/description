@@ -1,0 +1,40 @@
+struktura:
+bank
+konto
+status konta (zadłużone, zwykłe, duża kasa)
+rodzaj konta (ROR, oszczędnościowe)
+
+zakładamy w banku konto
+na początek zwykłe
+jak wpłacimy dużo to zminia się naliczanie odsetek na "duża kasa"
+jak wypłacimy więcej niż mamy - czyli wejdziemy w debet - to wtedy "zadłużone"
+
+metoda do naliczania odsetek ma uwzględniać stan konta
+jak zwykłe to 1% od salda
+jak duża kasa to 1,5
+jak zadłużone to -4
+
+
+====================
+
+dodaj możliwość wzięcia kredytu w Rachunku bieżącym
+
+
+
+----------------------------------------
+Zasada "Dziel i zwyciężaj" / "Divide & Conquer"
+Napisać symulację banku
+---
+podzielmy to :
+---
+w banku są konta
+w banku są klienci
+w banku są przepływy pieniądza
+---
+konta
+konto ma numer
+konto ma stan (ile pieniędzy)
+konto ma właściciela
+na konto można dodać pieniędzy
+z konta można wyjąć pieniądze
+--

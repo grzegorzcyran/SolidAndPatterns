@@ -1,0 +1,82 @@
+1. Jakie są wzorce do tworzenia obiektów (nazwa, wymienić)?
+    singleton, factory (czasem zwana factory method), (czasem osobno abstract factory),  builder, prototype
+
+2. Fabryka abstrakcyjna a metoda fabryczna
+ - fabryka abstrakcyjna dodaje kolejne klasy nie zmieniając dotychczasowej struktury
+ - metoda fabryczna to mniejsza struktura klas ale dodanie kolejnego typu powoduje konieczność
+ rozszerzania istniejącej metody (łamiemy OCP)
+
+3. Jakie typy singletona znamy? Który nie może być zastosowany w aplikacji wielowątkowej
+ - eager
+ - lazy - nie można stosować w wielowątkowości
+ - double checked (lazy) !! - spr nazwę
+ - enum
+ - Bill Pugh
+
+4. Jaki wzorzec zastosować jak mamy dużo pól w obiekcie i nie wszystkie chcemy zawsze ustawiać
+ Builder (budowniczy)
+
+5. Jeśli mamy strukturę jak poniżej to co to za wzorzec, przy założeniu że spełniają ten sam kontrakt (interfejs)
+    new classA(new ClassB(new ClassC(new ClassD())))
+    DECORATOR
+
+6. Jeśli mamy różne algorytmy tej samej rodziny to jaki wzorzec do nich jeśli zakładamy wymienność
+  Strategy (ostatecznie może też być Template Metgod, ale polecana jest Strategia)
+  !!!UWAGA!!! Można się spotkać z pytaniem o wzorzec Polityka -> to jest inna nazwa Strategii
+
+7. Jakiego wzorca można użyć zamiast ENUMA?
+  zamiast Enuma -> Strategia (bywa nazywana Enumem na resorach)
+
+8. Jaki wzorzec może być użyty jako warstwa bezpieczeństwa albo cache?
+  PROXY
+
+9. Jeśli mamy wywołanie kilku metod na różnych obiektach i chcemy to uprościć dla odbiorcy to:
+  FASADA
+
+10. Jeśli chcemy uporządkować komunikację między wielu obiektami, to jaki wzorzec pasuje?
+  MEDIATOR
+
+11. Jaki wzorzec realizuje relację jeden do wielu ?
+  OBSERVER
+
+12. Jak mamy system zabezpieczeń i chcemy go rozbić na moduły i dla różnych miejsc używać
+  różnych kombinacji to ?
+  CHAIN
+
+13. Jeśli korzystamy z TemplateMethod to jaki obiekt powołamy? (klasa, interfejs, klasa abstrakcyjna, ...)?
+  ABSTRACT CLASS
+
+14. Do przechodzenia po kolejnych elementach kolekcji można wykorzystać wzorzec...?
+  ITERATOR
+
+15. Kiedy celowe może być porównanie obiektów przez == ?
+  - jak mamy np singletony (bo wtedy wiemy że 2 różne obiekty u nas w kodzie to tak naprawdę ten sam obiekt w pamięci)
+  - dzięki temu zyskujemy na czasie bo == jest szybsze niż equals()
+
+16. Czym się różni porównywanie przez == od equals()
+  == sprawdzi czy to ten sam obiekt (miejsce w pamięci)
+  equals() sprawdzy czy ma ustawione tak samo pola (te które wskażemy w metodzie equals)
+
+17. Jak będzie wyglądała pod spodem HashMap jeśli dla wszystkich obiektów będzie ten sam hashCode
+  pod spodem będzie w takim wypadku LinkedList
+
+18. Co mówi zasada SRP z SOLIDa
+  -obiekt ma mieć pojedynczą odpowiedzialność czyli zajmować się jedną rzeczą
+   czyli mieć jeden powód do zmiany tego obiektu (np. dodatkowe pole ok, ale zmiana logiki nie ok)
+
+19. Co mówi zasada OCP
+  - łatwe rozszerzanie systemu, brak konieczności (lub bardzo rzadko) zmiany istniejących struktur
+
+20. Co mówi zasada LSP
+  - nieważne którą implementację interfejsu podstawimy, przebieg programu powinien zakończyć się tym samym
+  TYPEM rezultatu (za każdym razem wynik operacji , za każdym razem Exception)
+
+21. Co mówi zasada ISP
+  - obiekt nie powinien mieć konieczności implementacji metod których nie potrzebuje - jak interfejs ma metody które
+  czasem nie są potrzebne to sensownie jest rozbić ten interfejs na mniejsze lub dziedziczące po sobie
+
+22. Co mówi zasada DIP
+  - obiekt nie powinien tworzyć obiektów zależnych tylko powinien je dostać w konstruktorze / setterze / jeszcze jakoś
+  czyli w obiekcie unikamy konstrukcji new InnyObiekt();
+
+

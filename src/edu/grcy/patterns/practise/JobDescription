@@ -1,0 +1,63 @@
+MUST HAVE:
+JAVA 8 and above (np 11)
+czyli
+kolekcje, obiekty, equals / hashcode, toString, pliki, może wątki (rzadziej / mniej)
+abstrakcje, interfejsy, SOLID, niektóre wzorce
+
+SPRING
+Spring Boot, Spring MVC, konfiguracja (anotacjami i XML)
+
+Hibernate / JPA
+łączenie / współpraca z bazami danych - odczytywanie / zapisywanie obiektów,
+transakcje,
+
+GIT
+commitowanie, branchowanie, łączenie zmian (merge / rebase)
+
+Baza danych SQL
+jakaś (Oracle / MSSQL / Postgres / MySQL)
+
+Narzędzia do budowania projektu
+MAVEN (ew. Gradle)
+
+HTML, CSS, jakiś JS (Angular / React / Vue) - tyle że JS mogą styknąć podstawy
+
+Testy
+JUnit (i AssertJ), czasem inne
+
+Jakieś IDE (czyli w Waszym wypadku IntelliJ)
+
+
+w wielu wypadkach j.angielski na poziomie komunikacji z kimś z zagranicy
+
+========================================
+Nice to have
+JAVA
+ciekawsze / bardziej skomplikowane tematy np wielowątkowość, refleksje
+
+Bazy danych No-SQL
+MongoDB, Apache Cassandra, ElasticSearch ...
+
+CI/CD
+czyli Continous Integration / Continous Delivery
+czyli narzędzia do automatycznego generowania aplikacji
+czyli narzędzia jak Jenkins, Jira, Confluense
+
+Metodyki zarządzania projektami
+Scrum / Agile, Kanban, Waterfall
+
+Spring
+Spring Cloud, Spring Batch, Spring Security(ale Security w niektórych projektach to must have)
+
+Hibernate / JPA
+bo to głęboki temat i dużo wiedzy, poza podstawami które będziecie mieć jest duuuuuużo więcej
+
+Chmura
+AWS / Google Cloud / ...
+
+Frontend
+wyższy poziom JS
+
+Konteneryzacja
+czyli Docker, Kubernetes, ewentualnie Docker Swarm
+Docker - co to jest i podstawy są do ogarnięcia w 2 dni po południami, polecam!!!

@@ -1,0 +1,22 @@
+zakładamy stado wilków
+
+ma być 10 sztuk
+ 1 samiec alfa
+ 3 wadery
+ 3 myśliwych
+ 3 młode (płeć nie ma znaczenia)
+
+robimy fabrykę na dostarczanie wilków wg typu
+typy:
+alfa
+wadera
+hunter
+youngster
+=============================================
+dodać enum z "typem wilka"
+
+użyć enuma w metodzie fabrycznej
+
+dodać typ wilka z enuma do konstruktora poszczególnych klas, ustawiany na sztywno
+
+dodać getter na typ wilka z klas poszczególnych wilków

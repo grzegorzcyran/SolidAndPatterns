@@ -1,0 +1,35 @@
+Wypożyczalnia aut
+
+klasa samochód
+opis
+marka, przebieg, typ
+
+klasa klient
+opis
+
+klasa wypożyczenia
+klient który wypożycza
+auto wypożyczane
+status wypożyczenia
+cena wypożyczenia
+status zapłaty? (enum)
+zapłata zaksięgowana
+
+
+enum
+statuswypozyczenia
+
+enum (albo strategia :) )
+rodzaj samochodu
+
+
+czynności
+wypożycz
+(parametry wypożyczenia - czas, zaliczka?, cena)
+
+oddaj
+
+opłać wypożyczenie
+
+rezerwacja auta
+
