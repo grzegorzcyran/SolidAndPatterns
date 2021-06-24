@@ -31,4 +31,21 @@ public class Person {
     public String getSecondName() {
         return secondName;
     }
+
+    public String getPersonInfo() {
+        return new StringBuilder(surname)
+                .append(" ")
+                .append(name)
+                .toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
