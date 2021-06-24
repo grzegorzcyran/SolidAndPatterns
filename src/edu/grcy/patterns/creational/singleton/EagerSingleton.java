@@ -23,6 +23,10 @@ public class EagerSingleton {
 		return otherField;
 	}
 
+	public void setOtherField(String otherField) {
+		this.otherField = otherField;
+	}
+
 	// ... kolejne pola i metody
 
 }

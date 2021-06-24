@@ -12,6 +12,12 @@ public class SingletonUsage {
         EagerSingleton anotherSingleton = EagerSingleton.getInstance();
         System.out.println(anotherSingleton.getOtherField());
 
+        EagerSingleton.getInstance().setOtherField("yyyuuu");
+        System.out.println("\nUstawienie other field na 1 instancji\n");
+        System.out.println(EagerSingleton.getInstance().getOtherField());
+        System.out.println(eagerSingleton.getOtherField());
+        System.out.println(anotherSingleton.getOtherField());
+
         LazySingleton lazySingleton = LazySingleton.getInstance();
         /**
          * Double lock singleton - LAZY ale z podwójnym sprawdzaniem, nadaje się do wątków
