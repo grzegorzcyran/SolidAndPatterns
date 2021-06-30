@@ -5,9 +5,11 @@ import java.util.List;
 public class ShoppingsDemo {
     public static void main(String[] args) {
 
+        //wzorzec
         ShoppingList original = new ShoppingList();
 
         try {
+            //poszczególne warianty zakupów na kolejne dni
             ShoppingList shoppingsForMonday = (ShoppingList) original.clone();
             List<String> mondayList = shoppingsForMonday.getShoppings();
             mondayList.remove("chleb");

@@ -9,6 +9,7 @@ public class Main {
 
 		System.out.println(volvo.getName() + " max speed: " + volvo.getSpeed());
 		System.out.println(jeep.getName() + " max speed: " + jeep.getSpeed());
+
 		System.out.println(jeep.getName() + " max speed for Europe: " + jeep.getSpeedKMH());
 
 

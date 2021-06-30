@@ -23,7 +23,17 @@ public class MustangBaseFactory {
                     //jeśli znajdziemy oczekiwaną kombinację to findAny ją zwróci
                     .findAny()
                     //jeśli nie ma oczekiwanej kombinacji to tworzymy nowy obiekt
+                    /**
+                     * orElseGet wywołuje Supplier(method)
+                     * czyli wywoła się tylko wtedy gdy jest to konieczne
+                     */
                     .orElseGet(() -> getNew(color, engine));
+
+                    /**
+                     * orElse wywołuje method
+                     * czyli wywoła się zawsze
+                     */
+                    //orElse(getNew(color, engine)
 
         } else {
             //przy pierwszym zamówieniu zestaw kombinacji
@@ -39,7 +49,7 @@ public class MustangBaseFactory {
     }
 
     private static FordMustangBase getNew(String color, String engine){
-        System.out.println("OrElse");
+        System.out.println("Doszło do OrElse");
         return new FordMustangBase(color, engine);
     }
 

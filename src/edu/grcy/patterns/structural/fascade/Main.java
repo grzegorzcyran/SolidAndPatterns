@@ -18,8 +18,8 @@ public class Main {
 
 		//generating MySql HTML report and Oracle PDF report using Facade
 		Fascade.generateReport(Fascade.DBType.MYSQL, Fascade.ReportType.HTML, tableName);
-		Fascade.generateReport(Fascade.DBType.ORACLE, Fascade.ReportType.PDF, tableName);
 
+		Fascade.generateReport(Fascade.DBType.ORACLE, Fascade.ReportType.PDF, tableName);
 	}
 
 }

@@ -14,7 +14,7 @@ public class ShoppingList implements Cloneable {
 
 	//konstruktor do otrzymywania kopii
 	public ShoppingList(List<String> list) {
-		this.shoppings =list;
+		this.shoppings = list;
 	}
 
 	public void loadInitialData() {

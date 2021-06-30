@@ -1,9 +1,21 @@
 package edu.grcy.patterns.structural.composite;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Drawing implements Shape{
+/**
+ * Serializable jest jednym z interfejsów tzw. znacznikowych
+ * czyli nie wymagających implementacji żadnej metody
+ * Służy to tylko do włączania / wyłączania dodatkowej funkcjonalności na klasie
+ *
+ * konkretnie Serializable służy do zamiany obiektów na strumień danych
+ * które przesyła się np siecią, komunikacją asynchroniczną, czy jeszcze jakoś
+ *
+ * i po stronie odbiorcy odszyfrowuje do postaci obiektu
+ *
+ */
+public class Drawing implements Shape, Comparable<Shape>, Serializable {
 	private String name;
 
 	public Drawing(String name) {
@@ -36,5 +48,11 @@ public class Drawing implements Shape{
 	public void clear(){
 		System.out.println("Clearing all the shapes from drawing");
 		this.shapes.clear();
+	}
+
+	@Override
+	public int compareTo(Shape o) {
+		//jakaś metoda porównania obiektów
+		return 0;
 	}
 }

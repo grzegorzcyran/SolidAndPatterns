@@ -9,12 +9,15 @@ public class House {
 	private String garage;
 	private String garden;
 
+	private Heating heating;
+
 	private House(HouseBuilder builder) {
 		this.basement = builder.basement;
 		this.walls = builder.walls;
 		this.roof = builder.roof;
 		this.garage = builder.garage;
 		this.garden = builder.garden;
+		this.heating = builder.heating;
 	}
 
 	public String getBasement() {
@@ -35,6 +38,7 @@ public class House {
 
 	public String getHouseInfo() {
 		return "House: basement: " + basement + ", walls: " + walls + ", roof: " + roof +
+				(heating != null ? ", heating: " + heating.getHeatingType() : "") +
 				(garage != null ? ", garage: " + garage : "") +
 				(garden != null ? ", garden: " + garden : "") +
 				".";
@@ -49,6 +53,8 @@ public class House {
 		private String garage;
 		private String garden;
 
+		private Heating heating;
+
 		public HouseBuilder(String basement, String walls, String roof) {
 			this.basement = basement;
 			this.walls = walls;
@@ -62,6 +68,11 @@ public class House {
 
 		public HouseBuilder withGarden(String garden) {
 			this.garden = garden;
+			return this;
+		}
+
+		public HouseBuilder withHeating(Heating heating) {
+			this.heating = heating;
 			return this;
 		}
 
